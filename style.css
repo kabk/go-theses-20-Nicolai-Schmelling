@@ -181,6 +181,8 @@ h1{
 .interviewboxtitel{
   margin-top: 2.5mm !important;
   min-height: calc(100% - 4em - 7mm);
+  min-height: -moz-calc(100% - 4em - 7mm);
+min-height: -webkit-calc(100% - 4em - 7mm);     
   min-width: 300%;
   margin-bottom: 2mm !important;
 
