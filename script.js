@@ -2,7 +2,6 @@ $( document ).ready(function() {
     // var parentwidth = $(".shadow-wrapper").width();
     // var parentheight = $(".shadow-wrapper").height();
 
-    $(".TOC").hide();
     //
     // setTimeout(function() {
     //     $(".embed-shadow").width(parentwidth);
@@ -18,7 +17,7 @@ $( document ).ready(function() {
     // }, 10000);
 
     $(".TOC a").click(function(){
-      $(".TOC").hide();
+      $(".TOC-background").hide();
 
     });
 
@@ -32,10 +31,32 @@ $( document ).ready(function() {
     $(".quote-line3").height(parentheight3);
 
     $(".TOC-button").click(function(){
-      $(".TOC").toggle();
+      $(".TOC-background").toggle();
 
 
     });
+
+  //   function slideBar( ) {
+  //   var arrow = $( this );
+  //
+  //   var direction = 1 * arrow.parent( ).hasClass( 'arrow-right' );
+  //   if ( direction == 0 ) direction = -1;
+  //
+  //   var bar = arrow.parent( ).parent( )
+  //                  .find( '.glossary' );
+  //
+  //   var length = bar.children( ).length;
+  //   var index = bar.data( 'index' );
+  //   if ( index == undefined ) index = 0;
+  //
+  //   index += direction;
+  //   if ( index < 0 ) index = length - 1;
+  //   else if ( index >= length ) index = 0;
+  //
+  //   bar.css( 'arrow-right', -1 * ( index * 100) + '%' )
+  //      .data( 'index', index );
+  // }
+  // $( '.arrows .button' ).on( "click", slideBar );
 
 
 
