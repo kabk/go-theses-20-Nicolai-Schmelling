@@ -709,7 +709,9 @@ ol {
     left: calc(50% - 270px);
     left: -moz-calc(50% - 270px);
     left: -webkit-calc(50% - 270px);
-    overflow: visible;
+
+    overflow-x: visible;
+    overflow-y: scroll;
   }
 
   .lettering {
@@ -722,6 +724,7 @@ ol {
 
   .ch2{
     margin-top: 0px;
+    padding-right: 10px;
   }
 
   .ch3{
